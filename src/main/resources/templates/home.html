@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Service</title>
+</head>
+<body>
+
+ <h1>Home...</h1>
+ <br>
+ <hr>
+
+ <form th:action="@{/employee}" th:object="${employee}" method="post">
+
+  <p>
+   ForeName : <input type="text" name="foreName"  />
+  </p>
+  <p>
+   SurName : <input type="text" name="surName"  />
+  </p>
+  <p>
+   Company : <input type="text" name="company" />
+  </p>
+  <p>
+   PostCode : <input type="text" name="postcode" />
+  </p>
+  <p>
+   Age : <input type="text" name="age"/>
+  </p>
+  <p>
+   <input type="submit" value="Submit"  />
+ </form>
+</body>
+</html>
